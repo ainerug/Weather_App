@@ -17,3 +17,26 @@ body{
   background-size:cover;
 }
 
+@media screen and (max-width:950px){
+  .cityName{
+
+    font-size: 35px;
+   
+  }
+
+  .cityTemp{
+
+    font-size: 30px;
+
+  }
+
+  .cityTime{
+
+    font-size: 20px;
+  }
+
+  .cityDate{
+    font-size: 20px;
+
+  }
+}

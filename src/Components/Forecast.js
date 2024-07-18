@@ -49,12 +49,12 @@ export default function Forecast() {
       {/*Main DIV*/}
       {loading === false ? (
         <>
-          <div className="w-[60%] h-[550px] flex">
+          <div className=" main-container w-[60%] h-[550px] flex">
             {/*Left container*/}
             <div className=" flex  flex-col  justify-between left-side-div w-[65%] h-full rounded-xl shadow-md shadow-white brightness-100">
               {/*Left TOP*/}
               <div className="flex flex-col items-end px-5 py-3">
-                <h1 className="text-white text-[45px] font-semibold pt-5">
+                <h1 className="text-[45px]   text-white  font-semibold pt-5 cityName ">
                   {forecast.name}
                 </h1>
                 <h3 className="text-white text-[25px] font-semibold">
@@ -64,20 +64,20 @@ export default function Forecast() {
               {/*Container's bottom*/}
               <div className="flex justify-between pb-8 px-8">
                 <div className="flex flex-col">
-                  <h1 className="text-white text-[30px] font-semibold">
+                  <h1 className="text-white text-[30px] font-semibold cityTime">
                     <Clock
                       format={"HH:mm:ss"}
                       ticking={true}
                       timezone={"Europe/Lisbon"}
                     />
                   </h1>
-                  <p className="text-white text-[30px] font-semibold">
+                  <p className="text-white text-[30px] font-semibold cityDate">
                     {new Date().toLocaleDateString()}
                   </p>
                 </div>
                 {/*Right bottom*/}
                 <div>
-                  <h1 className="pt-8 text-white text-[40px] font-semibold">
+                  <h1 className="pt-8 text-white text-[40px] font-semibold cityTemp">
                     {Math.round(forecast.main?.temp)}°C
                   </h1>
                 </div>
