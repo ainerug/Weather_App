@@ -51,7 +51,7 @@ export default function Forecast() {
         <>
           <div className=" w-[60%] h-[550px] flex main-container">
             {/*Left container*/}
-            <div className=" flex  flex-col  justify-between left-side-div w-[65%] h-full rounded-xl shadow-md shadow-white brightness-100 left-container">
+            <div className=" flex  flex-col  justify-between left-side-div w-[65%] h-full rounded-xl shadow-md shadow-white brightness-200 left-container">
               {/*Left TOP*/}
               <div className="flex flex-col items-end px-5 py-3 left-top">
                 <h1 className="text-[45px]   text-white  font-semibold pt-5 cityName ">
@@ -85,7 +85,7 @@ export default function Forecast() {
             </div>
 
             {/*Right side*/}
-            <div className="bg-black bg-opacity-55 w-[35%] h-full rounded-xl shadow-md shadow-white px-4 right-container">
+            <div className="bg-gradient-to-b from-black to-emerald-900  w-[35%] h-full rounded-xl shadow-md shadow-white px-4 right-container opacity-100">
               <div>
                 <img
                   src={`https://openweathermap.org/img/wn/${forecast.weather?.[0]?.icon}@4x.png`}
@@ -112,7 +112,7 @@ export default function Forecast() {
                   type="text"
                   name="search"
                   placeholder="Search..."
-                  className="w-[80%] h-[40px] bg-transparent border-b-2 text-white text-[16px]"
+                  className="w-[80%] h-[40px] bg-transparent border-b-2 text-white text-[16px] placeholder"
                 />
               </div>
               <div className="text-center py-3">
