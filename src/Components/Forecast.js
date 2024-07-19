@@ -85,7 +85,7 @@ export default function Forecast() {
             </div>
 
             {/*Right side*/}
-            <div className="bg-gradient-to-b from-black to-emerald-900  w-[35%] h-full rounded-xl shadow-md shadow-white px-4 right-container opacity-100">
+            <div className="w-[35%] h-full rounded-xl shadow-md shadow-white px-4 right-container brightness-100">
               <div>
                 <img
                   src={`https://openweathermap.org/img/wn/${forecast.weather?.[0]?.icon}@4x.png`}

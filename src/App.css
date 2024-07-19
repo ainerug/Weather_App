@@ -5,7 +5,7 @@
 }
 body{
 
-  background-image: linear-gradient(to left, rgba(20, 21, 20, 0.529), rgba(29, 31, 29, 0.177)), url("./images/nature2_background.png");
+  background-image: linear-gradient(to left, rgba(20, 21, 20, 0.741), rgba(29, 31, 29, 0.639)), url("./images/nature2_background.png");
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
@@ -23,6 +23,10 @@ body{
   background-size:cover;
   
 }
+
+.right-container{
+   background-color:  rgba(0, 0, 0, 0.247);
+  }
 
 
 
