@@ -49,20 +49,20 @@ export default function Forecast() {
       {/*Main DIV*/}
       {loading === false ? (
         <>
-          <div className=" main-container w-[60%] h-[550px] flex">
+          <div className=" w-[60%] h-[550px] flex main-container">
             {/*Left container*/}
-            <div className=" flex  flex-col  justify-between left-side-div w-[65%] h-full rounded-xl shadow-md shadow-white brightness-100">
+            <div className=" flex  flex-col  justify-between left-side-div w-[65%] h-full rounded-xl shadow-md shadow-white brightness-100 left-container">
               {/*Left TOP*/}
-              <div className="flex flex-col items-end px-5 py-3">
+              <div className="flex flex-col items-end px-5 py-3 left-top">
                 <h1 className="text-[45px]   text-white  font-semibold pt-5 cityName ">
                   {forecast.name}
                 </h1>
-                <h3 className="text-white text-[25px] font-semibold">
+                <h3 className="text-white text-[25px] font-semibold countryName">
                   {forecast.sys?.country}
                 </h3>
               </div>
               {/*Container's bottom*/}
-              <div className="flex justify-between pb-8 px-8">
+              <div className="flex justify-between pb-8 px-8 left-bottom">
                 <div className="flex flex-col">
                   <h1 className="text-white text-[30px] font-semibold cityTime">
                     <Clock
@@ -85,17 +85,17 @@ export default function Forecast() {
             </div>
 
             {/*Right side*/}
-            <div className="bg-black bg-opacity-55 w-[35%] h-full rounded-xl shadow-md shadow-white px-4">
+            <div className="bg-black bg-opacity-55 w-[35%] h-full rounded-xl shadow-md shadow-white px-4 right-container">
               <div>
                 <img
                   src={`https://openweathermap.org/img/wn/${forecast.weather?.[0]?.icon}@4x.png`}
                   alt="icon"
                   width={180}
-                  className="m-auto"
+                  className="m-auto right-side-icon"
                 />
               </div>
               <div className="flex justify-between items-center px-3">
-                <h1 className="text-white text-[35px] font-semibold">
+                <h1 className="text-white text-[35px] font-semibold right-side-text">
                   {forecast.weather?.[0]?.main}
                 </h1>
                 <img

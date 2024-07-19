@@ -26,7 +26,8 @@ body{
 
   .cityTemp{
 
-    font-size: 30px;
+    font-size: 25px;
+    margin-top: -25px;
 
   }
 
@@ -39,4 +40,72 @@ body{
     font-size: 20px;
 
   }
+  .countryName {
+   margin-top: -40px;
+  }
 }
+
+@media screen and (max-width:875px){
+  .right-side-icon img{
+    width:100px;
+  }
+
+  .right-side-text {
+    font-size:20px;
+  }
+}
+
+@media screen and (max-width:804px){
+  .main-container{
+    flex-direction: column;
+    margin:auto;
+    justify-content: center;
+  }
+  .left-container{
+    width: 90%;
+    margin:auto;
+  }
+
+  .right-container{
+    width:90%;
+    margin:auto;
+  }
+  
+  .right-side-text {
+    font-size:30px;
+  }
+  .left-bottom{
+    flex-direction: column;
+    text-align: center;
+
+  }
+  .left-top{
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+
+  }
+  .countryName{
+    text-align: center;
+  }
+}
+
+@media screen and (max-width:500px){
+
+  
+  .cityTemp{
+    font-size:20px;
+  }
+
+  .cityName{
+    font-size: 25px;
+  }
+
+  .countryName{
+    font-size:20px;
+  }
+  .right-side-icon img{
+    width:50px;
+  }
+  }
+  
