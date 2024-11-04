@@ -73,15 +73,19 @@ body{
     flex-direction: column;
     margin:auto;
     justify-content: center;
+    height:150vh;
+    
+   
   }
   .left-container{
     width: 100%;
-    margin:auto;
+    margin-top:50px;
   }
 
   .right-container{
     width:100%;
     margin:auto;
+    margin-bottom:100px;
   }
   
   .right-side-text {
@@ -121,4 +125,6 @@ body{
     width:50px;
   }
   }
-  
+  @media screen and (max-width:390px){
+   
+  }
