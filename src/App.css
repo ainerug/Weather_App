@@ -126,5 +126,8 @@ body{
   }
   }
   @media screen and (max-width:390px){
-   
+   .left-container {
+
+  height:60vh;
+   }
   }
